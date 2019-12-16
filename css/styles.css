@@ -6,6 +6,13 @@ body {
     color: #505962;
 }
 
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 .offset:before {
     display: block;
     height: 4rem;
@@ -47,9 +54,10 @@ body {
 
 /* Landing Page */
 .home-inner {
-    background: url("../img/computers.png") center no-repeat;
+    background: url("../img/computers.png") center;
+    background-size: cover;
     width: auto;
-    height: 900px; 
+    height: 1000px; 
 }
 
 .caption {
@@ -63,7 +71,7 @@ body {
 }
 
 .caption h1 {
-    font-size: 3.8rem;
+    font-size: 5rem;
     font-weight: 700;
     letter-spacing: .2rem;
     text-shadow: .1rem .1rem .8rem black;
@@ -84,6 +92,7 @@ body {
 
 .caption .btn-lg:hover {   
     transform: scale(1.25);
+    color: tomato;
 }
 /* About Section */
 
@@ -104,12 +113,7 @@ body {
     text-align: center;
 }
 
-h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-}
+
 /* Interests */
 
 .jumbotron {
@@ -136,6 +140,16 @@ h2 {
 
 .interests p {
     font-size: 1.1rem;
+}
+/* Projects Section */
+
+.project-item {
+    padding: 250px;    
+}
+.project-item h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 /* Resources Section */
@@ -170,7 +184,9 @@ h2 {
 }
 
 /* Contact Section */
-
+footer h2 {
+    padding-top: 1em;
+}
 footer {
     background-color: #40474e;
     color: white;
