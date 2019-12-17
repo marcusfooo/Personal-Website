@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
@@ -53,8 +53,8 @@
 
     <div class="caption text-center">
         <h1>Marcus Foo</h1>
-        <h2>Aspiring Software Engineer</h2>
-        <a href="Resume.pdf" class="btn btn-outline-light btn-lg" download>Resume<i class="fa fa-chevron-circle-down"></i></a>
+        <h2>Business & CS Student</h2>
+        <a href="Marcus Foo.pdf" class="btn btn-outline-light btn-lg" download>Resume<i class="fa fa-chevron-circle-down"></i></a>
     </div>
 
     <!-- End Home Section-->
@@ -62,8 +62,9 @@
     <!-- Start About Section -->
 
     <div id="about" class="offset">
-        <div class="col-12 narrow text-center">
-                <h2>About Me</h2>
+        <div class="about col-12 narrow text-center">
+                <h2 class="heading">About Me</h2>
+                <div class="heading-underline"></div>
                 <p class="lead">I am currently a student at Nanyang Technological Univeristy (NTU), pursuing a 
                     Double Degree in Business & Computing.<br><br>
                     With a passion for technology and a desire to learn, I firmly believe in the effectiveness of learning through application
@@ -82,31 +83,33 @@
             <div class="row interests text-center">
 
                 <div class="col-12">
-                    <h3 class="heading">Interests</h3>
+                    <h2 class="heading">Interests</h2>
                     <div class="heading-underline"></div>
+                    <p>My Technical fields of interests are as mentioned below, I also do have plans to expose myself to the FinTech industry by dabbling in Ethereum's native language, Solidity.
+                        However, I'm also an avid runner and a cocktail enthusiast. I spend my free time infusing spirits, carving clear ice as well as running very veryyy long distances.</p>
                 </div>
 
-                <div class="col-md-4">
+                <div class="interest-col col-md-4">
                     <h3>Machine Learning & AI</h3>
                     <div class="feature">
-                        <i class="fas fa-robot fa-3x"></i>
-                        <p class="personal-interests">Predictive Analytics<br>Algorithmic Trading</p>
+                        <i class=" logo fas fa-robot fa-5x"></i>
+                        <p class="personal-interests">Algorithmic Trading<br>Neural Networks<br>Natural Language Processing</p>
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="interest-col  col-md-4">
                     <h3>Data Science & Analytics</h3>
                     <div class="feature">
-                        <i class="fas fa-chart-line fa-3x"></i>
-                        <p class="personal-interests">Data Mining<br>Data Visualisation</p>
+                        <i class="fas fa-chart-line fa-5x"></i>
+                        <p class="personal-interests">Data Visualisation (Tableau/ R)<br>Regression Analysis</p>
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="interest-col  col-md-4">
                     <h3>Web-Development</h3>
                     <div class="feature">
-                        <i class="fas fa-users-cog fa-3x"></i>
-                        <p class="personal-interests">FullStack Development</p>
+                        <i class="fas fa-users-cog fa-5x"></i>
+                        <p class="personal-interests">FullStack Development (MERN)<br>CMS Integration (Wordpress)</p>
                     </div>
                 </div>
             
@@ -116,13 +119,50 @@
     <!-- End Interests Section -->
 
     <!-- Start Project Section -->
-    <div id="projects" class="offset">       
-        <div class="project-item text-center">
-            <h2>Projects</h2>
-            <p class="projects text-center">In Development</p>
-            <i class="fas fa-hammer fa-10x"></i>
+    <div id="projects" class="offset"> 
+        <div class= "projects-background">
+            <div class="row background projects text-center">
+                <div class="col-12">
+                    <h2 class="heading">Projects</h2>
+                    <div class="heading-underline"></div>
+                </div>
+    
+    
+                <div class="project-item col-md-4">
+                    <div class="jumbotron card" style="width: 18rem">
+                        <i class="logo fab fa-python fa-8x"></i>
+                        <div class="card-body">
+                            <h3 class="card-title">Hang Seng Index Trend Predictor</h3>
+                            <p class="card-text">A directional trend predictor for the HSI using Logtistic Regression and Recurrent Neural Networks.<br><br>This project was meant to be a fun project, deployed for the InvestingNote Trading Competition.</p>
+                            <a href="https://github.com/marcusfooo/HSI-Analysis" target="_blank" class="btn btn-primary">Code</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="project-item col-md-4">
+                    <div class="jumbotron card" style="width: 18rem">
+                        <i class="logo fab fa-node fa-8x"></i>
+                        <div class="card-body">
+                        <h3 class="card-title">MERN Stack To-Do-List</h3>
+                        <p class="card-text">Deployed and built a CRUD application using the MERN Stack in 3 days.<br><br>This project was used in my application as a backend developer for HackLyst, an NTU Innovation Project.<br><br></p>
+                        <a href="https://github.com/marcusfooo/mern-todo-app" target="_blank" class="btn btn-primary">Code</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="project-item col-md-4">
+                    <div class="jumbotron card" style="width: 18rem">
+                        <i class="logo fab fa-html5 fa-8x"></i>
+                        <div class="card-body">
+                        <h3 class="card-title">Personal Website</h3>
+                        <p class="card-text">This website was built using HTML5/ CSS/ JavaScript using frameworks like Bootstrap and jQuery.<br><br>Resume was written in LaTeX.<br><br><br><br></p>
+                        <a href="https://github.com/marcusfooo/marcusfooo.github.io" target="_blank" class="btn btn-primary">Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>      
-    </div>
+</div>>
 
     <!-- End Project Section -->
 
@@ -140,7 +180,7 @@
                     <h3>HTML 5</h3>
                     <div class="feature">
                         <i class="fas fa-code fa-3x"></i>
-                        <p class="lead">Built with the latest, HTML 5.</p>
+                        <p class="lead">Semantic HTML for Search Engine Optimisation</p>
                     </div>
                 </div>
 
@@ -148,7 +188,7 @@
                     <h3>Bootstrap 4</h3>
                     <div class="feature">
                         <i class="fas fa-bold fa-3x"></i>
-                        <p class="lead">Built with the latest, BOOTSTRAP.</p>
+                        <p class="lead">Smooth and Intuitive elements through Bootstrap</p>
                     </div>
                 </div>
 
@@ -156,14 +196,10 @@
                     <h3>CSS 3</h3>
                     <div class="feature">
                         <i class="fab fa-css3 fa-3x"></i>
-                        <p class="lead">Built with the latest, CSS 3.</p>
+                        <p class="lead">Pleasant Design using CSS</p>
                     </div>
                 </div>
 
-                <div class="fixed-wrap">
-                    <div class="fixed">
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -183,10 +219,10 @@
              <div class="row justify-content-center">
                  <div class="col-md-5 text-center">                   
                     <h2>Contact</h2>
-                    <p>Feel free to reach out to me through the following:<br></p>
+                    <p>Need a low-cost personal website? Feel free to reach out to me if you have any questions or job requests.<br></p>
                     <p>marc0052@e.ntu.edu.sg</p>
-                    <a href="" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/marcusfooo" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/marcusfooo/" target="_blank"><i class="fab fa-linkedin"></i></a>
                  </div>
              </div>
          </footer>
